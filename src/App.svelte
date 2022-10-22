@@ -58,7 +58,7 @@
 
 <main>
   <h1>Webcam test</h1>
-  <select bind:value={deviceId} on:change={() => console.log(deviceId)}>
+  <select bind:value={deviceId}>
     {#each devices as { label, value }}
       <option {value}>{label}</option>
     {/each}
